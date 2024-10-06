@@ -4,6 +4,8 @@
 // : number
 const reviewTotalDisplay = document.querySelector('#reviews') as HTMLElement
 
+let isOpen : boolean
+
 const reviews = [
     {
         name: 'Sheia',
