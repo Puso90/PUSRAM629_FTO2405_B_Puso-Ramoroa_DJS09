@@ -38,18 +38,19 @@ showReviewTotal(reviews.length, reviews[0].name, reviews[0].loyaltyUser)
 
 
 const you: {
-    firstName : string;
+    firstName: string;
     lastName: string;
     isReturning: boolean;
     age: number;
+    stayedAt: string[];
 } = {
-   firstName: 'Puso',
-   lastName: 'Ramoroa',
-   isReturning: true,
-   age: 34
+    firstName: 'Puso',
+    lastName: 'Ramoroa',
+    isReturning: true,
+    age: 34,
+    stayedAt: ['phokeng', 'cape-flats', 'tokyo']
 }
 
-console.log(you.userName)
 
 function populateUser(isReturning : boolean, userName: string ) {
     if (isReturning){
@@ -58,4 +59,4 @@ function populateUser(isReturning : boolean, userName: string ) {
     userNameDisplay.innerHTML = userName
 }
 
-populateUser(you.isReturning, you.userName)
+populateUser(you.isReturning, you.firstName)
