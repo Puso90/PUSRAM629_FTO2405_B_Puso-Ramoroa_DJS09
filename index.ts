@@ -4,7 +4,7 @@
 // : number
 const reviewTotalDisplay = document.querySelector('#reviews') as HTMLElement
 
-let isOpen : boolean
+let Car
 
 const reviews = [
     {
@@ -37,13 +37,21 @@ showReviewTotal(reviews.length, reviews[0].name, reviews[0].loyaltyUser)
 
 
 
-const you = {
-    userName: 'Bobby',
-    isReturning: true,
+const you: {
+    firstName : string;
+    lastName: string;
+    isReturning: boolean;
+    age: number;
+} = {
+   firstName: 'Puso',
+   lastName: 'Ramoroa',
+   isReturning: true,
+   age: 34
 }
 
+console.log(you.userName)
 
-function populateUser(isReturning : boolean, userName : string ) {
+function populateUser(isReturning : boolean, userName: string ) {
     if (isReturning){
         returningUserDisplay.innerHTML = 'back'
     }
@@ -51,4 +59,3 @@ function populateUser(isReturning : boolean, userName : string ) {
 }
 
 populateUser(you.isReturning, you.userName)
-
