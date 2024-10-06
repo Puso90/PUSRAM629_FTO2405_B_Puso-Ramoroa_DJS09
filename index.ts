@@ -2,7 +2,7 @@
 // Write a function that will only accept numbers and attend to 
 // all TypeScript weakness flags.
 // : number
-const reviewTotalDisplay = document.querySelector('#reviews')
+const reviewTotalDisplay = document.querySelector('#reviews') as HTMLElement
 
 const reviews = [
     {
@@ -26,7 +26,7 @@ const reviews = [
 ]
 
 function showReviewTotal (value : number) {
-    reviewTotalDisplay.innerHTML = 'review total ' + value.toString()
+    reviewTotalDisplay.innerHTML = value.toString()
 }
 
 showReviewTotal(reviews.length)
