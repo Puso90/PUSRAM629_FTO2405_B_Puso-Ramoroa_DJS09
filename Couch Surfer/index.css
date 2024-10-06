@@ -48,11 +48,13 @@ body {
     box-shadow: rgb(0 0 0 / 12%) 0 1px 8px;
 }
 
+.card img {
+    width: 100%;
+}
+
 .footer {
     width: 100%;
     background-color: lightcoral;
-    position:absolute;
-    bottom:0;
     text-align: center;
     padding: 30px;
     color: white;
@@ -71,4 +73,17 @@ body {
     height: 1px;
     width: 90%;
     background-color: coral;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    
+}
+
+button:hover {
+    background-color: goldenrod;
 }
